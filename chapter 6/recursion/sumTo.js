@@ -5,7 +5,7 @@
     С использованием формулы арифметической прогрессии.
  */
 
-sumTo = (n) => {
+const sumTo = (n) => {
   let sum = 0;
   for (let i = 0; i <= n; i++) {
     sum += i;
@@ -14,10 +14,10 @@ sumTo = (n) => {
   return sum;
 };
 
-sumTo = (n) => {
+const sumTo = (n) => {
   return n === 1 ? n : n + sumTo(n - 1);
 };
 
-sumTo = (n) => {
+const sumTo = (n) => {
   return (n * (n + 1)) / 2;
 };

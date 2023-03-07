@@ -15,7 +15,7 @@ let list = {
   },
 };
 
-printList = (list) => {
+const printList = (list) => {
   while (list) {
     alert(list.value);
     list = list.next;
@@ -23,7 +23,7 @@ printList = (list) => {
 };
 // не рекомендовано - может помешать расширению функции. Лучше копировать внутри ф-ции list в другуб переменную и работать с ней.
 
-printList = (list) => {
+const printList = (list) => {
   alert(list.value);
 
   if (list.next) {
